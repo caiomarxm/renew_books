@@ -10,10 +10,15 @@ def get_books():
     books = []
     i = 0
     elements = driver.find_elements(By.CLASS_NAME, 'txt_azul')
+    print(f'Processing books requisition...')
     for el in elements:
         if el.text != ' ':
             title = el.text[0:el.text.find('/')-1]
             books.append({'title': title})
+    if books:
+        print(f'Successfuly got book information!')
+    else:
+        print(f'Unable to acquire book information!')
     
     elements = driver.find_elements(By.CLASS_NAME, 'txt_cinza_10')
     for el in elements:
@@ -93,7 +98,7 @@ with open('log.txt', 'a') as log:
         log.write(f'No books needed renewal\n')
         log.write(f"-------------------------------------------------------\n")
 
+driver.close()
+
 print(f'Press any key to close...\n')
 input()
-
-driver.close()
