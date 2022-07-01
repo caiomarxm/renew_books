@@ -93,5 +93,7 @@ with open('log.txt', 'a') as log:
         log.write(f'No books needed renewal\n')
         log.write(f"-------------------------------------------------------\n")
 
-## Closing Driver ##
+print(f'Press any key to close...\n')
+input()
+
 driver.close()
