@@ -1,4 +1,4 @@
-('C:\\Users\\caiom\\desktop\\programas\\projetinhos\\biblioteca\\renew_books\\build\\renew_books_UFMG\\PYZ-00.pyz',
+('C:\\Users\\caiom\\Desktop\\programas\\Projetinhos\\biblioteca\\renew_books\\build\\renew_books_UFMG\\PYZ-00.pyz',
  [('pkgutil',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\\lib\\pkgutil.py',
