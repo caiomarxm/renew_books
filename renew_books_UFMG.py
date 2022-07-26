@@ -61,10 +61,10 @@ with open('login_info.json') as login_file:
 
 button = driver.find_element(By.NAME, 'button')
 button.click()
-WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'btn_renovar')))
 
 ## Getting Books ##
 try:
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'btn_renovar')))
     books = get_books()
 except:
     books = []
