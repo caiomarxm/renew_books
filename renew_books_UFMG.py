@@ -64,7 +64,11 @@ button.click()
 WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'btn_renovar')))
 
 ## Getting Books ##
-books = get_books()
+try:
+    books = get_books()
+except:
+    books = []
+    print(f"No books found")
 
 log_entry = []
 for i, book in enumerate(books):
