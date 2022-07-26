@@ -7,11 +7,11 @@ A Python script to automatically renovate book loans on a library system as retu
 
 ## Instructions
 ### Login Information
-To effectively use renew_books, inside the "dist" file create a JSON file named "login_information.json" with a single division:
+To effectively use renew_books, inside the "dist" file create a JSON file named "login_info.json" with a single division:
 
 {
-'login': your_library_number_here, 
-'password': password_here
+"login": your_library_number_here, 
+"password": password_here
 }
 
 ### Autorun on Boot (Windows)
